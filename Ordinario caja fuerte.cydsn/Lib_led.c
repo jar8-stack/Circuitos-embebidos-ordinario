@@ -16,23 +16,29 @@
 #include "Lib_led.h"
 
 
-/*static uint8 EstadoLeds=0x00;*/
+static uint8 EstadoLeds=0x00;
 
 void PrenderVerde(void){
-      
+    EstadoLeds |=LedVerde; 
+    Led_pins_Write(EstadoLeds); 
 }
 void ApagarVerde(void){
-    
+    EstadoLeds &=~(LedVerde); 
+    Led_pins_Write(EstadoLeds);
 }
 void PrenderAmarillo(void){
-    
+    EstadoLeds |=LedAmarillo; 
+    Led_pins_Write(EstadoLeds); 
 } 
 void ApagarAmarillo(void){
-    
+    EstadoLeds &=~(LedAmarillo); 
+    Led_pins_Write(EstadoLeds);
 }
 void PrenderRojo(void){
-    
+    EstadoLeds |=LedRojo; 
+    Led_pins_Write(EstadoLeds); 
 }
 void ApagarRojo(void){
-    
+    EstadoLeds &=~(LedRojo); 
+    Led_pins_Write(EstadoLeds);
 }

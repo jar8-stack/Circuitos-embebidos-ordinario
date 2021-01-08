@@ -1,0 +1,6 @@
+D:\Documentos\Trabajos\Universidad\5toSem\Electronica\Ordinario\Circuitos-embebidos-ordinario\Ordinario caja fuerte.cydsn\Ordinario caja fuerte.cyprj|65e47d5a-8481-48e5-b7ee-a47fe903ee50
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9003eb41-a1c8-49bd-ab8c-5b4cd3ec3214
+C:\Users\aguer\OneDrive\Documentos\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|a227c609-6314-416c-ad4a-e4d5399968d2
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|27404366-f69d-4bd0-85ed-1679d30ef7e7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9ac7b502-4c45-4698-9395-a1743e18cfdc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|88fcf89b-e786-4c6c-be00-87e46a8f2309

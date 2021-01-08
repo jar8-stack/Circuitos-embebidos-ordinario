@@ -15,11 +15,11 @@
 # ifndef _Lib_led_H_
 #define _Lib_led_H_
 
-/*#include <cytypes.h>    
-*# define PrimerLed 0x01
-*# define SegundoLed 0x02
-*# define TercerLed 0x04
- */   
+#include <cytypes.h>    
+# define LedVerde 0x01
+# define LedAmarillo 0x02
+# define LedRojo 0x04
+    
 extern void PrenderVerde(void);    
 extern void ApagarVerde(void);    
 
