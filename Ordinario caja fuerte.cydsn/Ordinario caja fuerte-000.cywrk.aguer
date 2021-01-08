@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Ordinario caja fuerte-000\Ordinario caja fuerte\Source Files\main.c">
+<ExpandedNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Pins</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Analog</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\DMA</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Clocks</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Interrupts</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\System</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Directives</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Flash Security</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Header Files</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Header Files\cyapicallbacks.h</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Source Files</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Source Files\main.c</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Pins</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Analog</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\DMA</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Clocks</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Interrupts</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\System</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Directives</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.cydwr\Flash Security</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Header Files</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Header Files\cyapicallbacks.h</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Source Files</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Source Files\main.c</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.gpdsc</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.rpt</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.gpdsc</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte.rpt</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\Ordinario caja fuerte_timing.html</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\PSoC 4 Architecture TRM</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\PSoC 4200M Family Datasheet</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_boot_v5_90</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_dmac_v1_10</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_lfclk_v1_20</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>Ordinario caja fuerte-000</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\PSoC 4 Architecture TRM</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\PSoC 4200M Family Datasheet</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_boot_v5_90</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_dmac_v1_10</v>
+<v>Ordinario caja fuerte-000\Ordinario caja fuerte\System Reference Guides\cy_lfclk_v1_20</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs />
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

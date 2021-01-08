@@ -19,6 +19,7 @@ int main(void)
 
     for(;;)
     {
+        /* Camarada que diantre*/
         /* Place your application code here. */
     }
 }
