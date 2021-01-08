@@ -10250,13 +10250,13 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  343              	.set Led_pins__0__DR_INV, CYREG_GPIO_PRT4_DR_INV
  344              	.set Led_pins__0__DR_SET, CYREG_GPIO_PRT4_DR_SET
  345              	.set Led_pins__0__HSIOM, CYREG_HSIOM_PORT_SEL4
- 346              	.set Led_pins__0__HSIOM_MASK, 0x000000F0
- 347              	.set Led_pins__0__HSIOM_SHIFT, 4
+ 346              	.set Led_pins__0__HSIOM_MASK, 0x0000F000
+ 347              	.set Led_pins__0__HSIOM_SHIFT, 12
  348              	.set Led_pins__0__INTCFG, CYREG_GPIO_PRT4_INTR_CFG
  349              	.set Led_pins__0__INTR, CYREG_GPIO_PRT4_INTR
  350              	.set Led_pins__0__INTR_CFG, CYREG_GPIO_PRT4_INTR_CFG
  351              	.set Led_pins__0__INTSTAT, CYREG_GPIO_PRT4_INTR
- 352              	.set Led_pins__0__MASK, 0x02
+ 352              	.set Led_pins__0__MASK, 0x08
  353              	.set Led_pins__0__PC, CYREG_GPIO_PRT4_PC
 ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 172
 
@@ -10264,41 +10264,41 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  354              	.set Led_pins__0__PC2, CYREG_GPIO_PRT4_PC2
  355              	.set Led_pins__0__PORT, 4
  356              	.set Led_pins__0__PS, CYREG_GPIO_PRT4_PS
- 357              	.set Led_pins__0__SHIFT, 1
+ 357              	.set Led_pins__0__SHIFT, 3
  358              	.set Led_pins__1__DR, CYREG_GPIO_PRT4_DR
  359              	.set Led_pins__1__DR_CLR, CYREG_GPIO_PRT4_DR_CLR
  360              	.set Led_pins__1__DR_INV, CYREG_GPIO_PRT4_DR_INV
  361              	.set Led_pins__1__DR_SET, CYREG_GPIO_PRT4_DR_SET
  362              	.set Led_pins__1__HSIOM, CYREG_HSIOM_PORT_SEL4
- 363              	.set Led_pins__1__HSIOM_MASK, 0x00000F00
- 364              	.set Led_pins__1__HSIOM_SHIFT, 8
+ 363              	.set Led_pins__1__HSIOM_MASK, 0x000F0000
+ 364              	.set Led_pins__1__HSIOM_SHIFT, 16
  365              	.set Led_pins__1__INTCFG, CYREG_GPIO_PRT4_INTR_CFG
  366              	.set Led_pins__1__INTR, CYREG_GPIO_PRT4_INTR
  367              	.set Led_pins__1__INTR_CFG, CYREG_GPIO_PRT4_INTR_CFG
  368              	.set Led_pins__1__INTSTAT, CYREG_GPIO_PRT4_INTR
- 369              	.set Led_pins__1__MASK, 0x04
+ 369              	.set Led_pins__1__MASK, 0x10
  370              	.set Led_pins__1__PC, CYREG_GPIO_PRT4_PC
  371              	.set Led_pins__1__PC2, CYREG_GPIO_PRT4_PC2
  372              	.set Led_pins__1__PORT, 4
  373              	.set Led_pins__1__PS, CYREG_GPIO_PRT4_PS
- 374              	.set Led_pins__1__SHIFT, 2
+ 374              	.set Led_pins__1__SHIFT, 4
  375              	.set Led_pins__2__DR, CYREG_GPIO_PRT4_DR
  376              	.set Led_pins__2__DR_CLR, CYREG_GPIO_PRT4_DR_CLR
  377              	.set Led_pins__2__DR_INV, CYREG_GPIO_PRT4_DR_INV
  378              	.set Led_pins__2__DR_SET, CYREG_GPIO_PRT4_DR_SET
  379              	.set Led_pins__2__HSIOM, CYREG_HSIOM_PORT_SEL4
- 380              	.set Led_pins__2__HSIOM_MASK, 0x0000F000
- 381              	.set Led_pins__2__HSIOM_SHIFT, 12
+ 380              	.set Led_pins__2__HSIOM_MASK, 0x00F00000
+ 381              	.set Led_pins__2__HSIOM_SHIFT, 20
  382              	.set Led_pins__2__INTCFG, CYREG_GPIO_PRT4_INTR_CFG
  383              	.set Led_pins__2__INTR, CYREG_GPIO_PRT4_INTR
  384              	.set Led_pins__2__INTR_CFG, CYREG_GPIO_PRT4_INTR_CFG
  385              	.set Led_pins__2__INTSTAT, CYREG_GPIO_PRT4_INTR
- 386              	.set Led_pins__2__MASK, 0x08
+ 386              	.set Led_pins__2__MASK, 0x20
  387              	.set Led_pins__2__PC, CYREG_GPIO_PRT4_PC
  388              	.set Led_pins__2__PC2, CYREG_GPIO_PRT4_PC2
  389              	.set Led_pins__2__PORT, 4
  390              	.set Led_pins__2__PS, CYREG_GPIO_PRT4_PS
- 391              	.set Led_pins__2__SHIFT, 3
+ 391              	.set Led_pins__2__SHIFT, 5
  392              	.set Led_pins__DR, CYREG_GPIO_PRT4_DR
  393              	.set Led_pins__DR_CLR, CYREG_GPIO_PRT4_DR_CLR
  394              	.set Led_pins__DR_INV, CYREG_GPIO_PRT4_DR_INV
@@ -10307,12 +10307,12 @@ ARM GAS  Generated_Source\PSoC4\CyBootAsmGnu.s 			page 1
  397              	.set Led_pins__INTR, CYREG_GPIO_PRT4_INTR
  398              	.set Led_pins__INTR_CFG, CYREG_GPIO_PRT4_INTR_CFG
  399              	.set Led_pins__INTSTAT, CYREG_GPIO_PRT4_INTR
- 400              	.set Led_pins__MASK, 0x0E
+ 400              	.set Led_pins__MASK, 0x38
  401              	.set Led_pins__PC, CYREG_GPIO_PRT4_PC
  402              	.set Led_pins__PC2, CYREG_GPIO_PRT4_PC2
  403              	.set Led_pins__PORT, 4
  404              	.set Led_pins__PS, CYREG_GPIO_PRT4_PS
- 405              	.set Led_pins__SHIFT, 1
+ 405              	.set Led_pins__SHIFT, 3
  406              	
  407              	/* IsrRowPins */
  408              	.set IsrRowPins__INTC_CLR_EN_REG, CYREG_CM0_ICER

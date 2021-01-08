@@ -10,6 +10,10 @@
  * ========================================
 */
 #include "project.h"
+#include "Lib_led.h"
+#include "Lib_led.h"
+
+int t=500; 
 
 int main(void)
 {
@@ -19,6 +23,10 @@ int main(void)
 
     for(;;)
     {
+        PrenderVerde();
+        CyDelay(t);
+        ApagarVerde();
+        CyDelay(t);
         /* Camarada que diantre*/
         /* Place your application code here. */
     }

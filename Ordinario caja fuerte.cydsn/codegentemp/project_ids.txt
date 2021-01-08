@@ -1,6 +1,12 @@
-D:\Documentos\Trabajos\Universidad\5toSem\Electronica\Ordinario\Circuitos-embebidos-ordinario\Ordinario caja fuerte.cydsn\Ordinario caja fuerte.cyprj|65e47d5a-8481-48e5-b7ee-a47fe903ee50
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9003eb41-a1c8-49bd-ab8c-5b4cd3ec3214
-C:\Users\aguer\OneDrive\Documentos\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|a227c609-6314-416c-ad4a-e4d5399968d2
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|27404366-f69d-4bd0-85ed-1679d30ef7e7
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|9ac7b502-4c45-4698-9395-a1743e18cfdc
-C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|88fcf89b-e786-4c6c-be00-87e46a8f2309
+C:\Users\biosh\Desktop\Universidad\quinto parcial\Programacion embebida\ordinario\Ordinario caja fuerte.cydsn\Ordinario caja fuerte.cyprj|64a81eb9-7eaa-4526-a65b-383078174bf4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9b00baf6-8f9f-4c90-a8c2-b7f8ccfec75c
+C:\Users\biosh\Documents\PSoC Creator\4.3\Downloads ( 4.3).cylib\Downloads ( 4.3).cyprj|b17d114a-ea19-4c87-852a-d032f36bdd10
+C:\Users\biosh\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|f9e5876a-e8ba-4a74-b8d6-66ea5abf3d52
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|ffd026b2-1c6a-4b77-80e4-fb2dbb62c44c
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d1659d4e-3e34-4567-ae27-15f04cb16d86
+C:\Program Files (x86)\Cypress\PSoC Creator\4.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|8af82a7c-d037-4db3-8091-2b927215d3a6
+C:\Users\biosh\Documents\PSoC Creator\DTS2_PRACTICAS\comunicacionSerial_arduino.cydsn\comunicacionSerial_arduino.cyprj|c2af0357-3687-4a61-8ba2-666cf6cd07a8
+C:\Users\biosh\Documents\PSoC Creator\DTS2_PRACTICAS\Interrupciones.cydsn\Interrupciones.cyprj|2caca2c5-6058-4091-86c5-227d5690f6e6
+C:\Users\biosh\Documents\PSoC Creator\DTS2_PRACTICAS\Teclado_matricial.cydsn\Teclado_matricial.cyprj|aabf5b52-d097-4fc9-a522-f012547a57ca
+C:\Users\biosh\Documents\PSoC Creator\DTS2_PRACTICAS\7_Display_Practice.cydsn\7_Display_Practice.cyprj|ad3dbc16-7f92-4a2b-bed7-b90530be383a
+C:\Users\biosh\Documents\PSoC Creator\DTS2_PRACTICAS\Libreria.cydsn\Libreria.cyprj|8c0e5467-92c6-4f7f-8e7b-4c668037f9a9

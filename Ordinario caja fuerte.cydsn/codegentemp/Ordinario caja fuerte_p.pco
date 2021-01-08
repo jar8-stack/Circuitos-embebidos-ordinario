@@ -10,8 +10,8 @@ set_io "Filas(3)" iocell 2 5
 set_location "Filas" logicalport -1 -1 2
 set_io "Filas(0)" iocell 2 2
 set_io "Col(0)" iocell 1 0
-set_io "Led_pins(0)" iocell 4 1
+set_io "Led_pins(0)" iocell 4 3
 set_io "Col(2)" iocell 1 2
-set_io "Led_pins(2)" iocell 4 3
+set_io "Led_pins(2)" iocell 4 5
 set_io "Col(1)" iocell 1 1
-set_io "Led_pins(1)" iocell 4 2
+set_io "Led_pins(1)" iocell 4 4

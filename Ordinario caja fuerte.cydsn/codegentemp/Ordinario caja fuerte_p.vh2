@@ -1,5 +1,5 @@
 -- Project:   Ordinario caja fuerte
--- Generated: 01/08/2021 16:39:01
+-- Generated: 01/08/2021 16:58:58
 -- PSoC Creator  4.3
 
 ENTITY \Ordinario caja fuerte\ IS
@@ -75,11 +75,11 @@ ARCHITECTURE __DEFAULT__ OF \Ordinario caja fuerte\ IS
     ATTRIBUTE lib_model OF Col(3) : LABEL IS "iocell8";
     ATTRIBUTE Location OF Col(3) : LABEL IS "P1[3]";
     ATTRIBUTE lib_model OF Led_pins(0) : LABEL IS "iocell9";
-    ATTRIBUTE Location OF Led_pins(0) : LABEL IS "P4[1]";
+    ATTRIBUTE Location OF Led_pins(0) : LABEL IS "P4[3]";
     ATTRIBUTE lib_model OF Led_pins(1) : LABEL IS "iocell10";
-    ATTRIBUTE Location OF Led_pins(1) : LABEL IS "P4[2]";
+    ATTRIBUTE Location OF Led_pins(1) : LABEL IS "P4[4]";
     ATTRIBUTE lib_model OF Led_pins(2) : LABEL IS "iocell11";
-    ATTRIBUTE Location OF Led_pins(2) : LABEL IS "P4[3]";
+    ATTRIBUTE Location OF Led_pins(2) : LABEL IS "P4[5]";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
