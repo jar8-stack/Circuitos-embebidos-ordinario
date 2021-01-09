@@ -1,8 +1,6 @@
 #include "stdbool.h"
 #include "project.h"
 #include "Keypad.h"
-#include "Lib_seg.h"
-
 static bool validkey= false;
 
 uint8 value= 0x00;
@@ -46,20 +44,16 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(Filas_Read()){
                 case 0x0e:
-                    key=1; 
-                    Prender1();
+                    key=1;                     
                     break;
                 case 0x0d:
-                    key=4;
-                    Prender4();
+                    key=4;                    
                     break;
                 case 0x0b: 
-                    key=7;
-                    Prender7();
+                    key=7;                   
                     break; 
                 case 0x07:
-                    key=0;
-                    Prender4();
+                    key='*'; 
                     break;
                 default:
                     return;
@@ -73,19 +67,19 @@ CY_ISR(InterrupRowButtons){
         if(value != 0x0F){
             switch(value){
                 case 0x0e:
-                    Prender2();
+                    key=2;
                     break;
                     
                 case 0x0d:
-                    Prender5();
+                    key=5;
                     break; 
                 
                 case 0x0b:
-                    Prender8();
+                    key=8;
                     break;
                 
                 case 0x07:
-                    Prender4();
+                    key=0;
                     break;
 
                 default: 
@@ -100,17 +94,50 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(value){
                 case 0x0e:
-                    Prender3();
+                    key=3;
                     break;
                     
                 case 0x0d:
-                    Prender6();
+                    key=6;
                     break;
+                
+                case 0x0b:
+                    key=9;
+                    break;
+                
+                case 0x07:
+                    key='#';
+                    break;
+                
                 
                 default:
                     break;
                     
             }
         }
+        
+        Col_Write(0x07);
+        value= Filas_Read();
+        if(value !=0x0F){
+            switch(value){
+                case 0x0e:
+                    key='A';
+                    break;
+                case 0x0d:
+                    key='B';
+                    break;
+                
+                case 0x0b:
+                    key='C';
+                    break;
+                case 0x07:
+                    key='D';
+                    break;
+                default:
+                    break;
+            }
+        }
+        Col_Write(0x00);
+        
     }
 }
