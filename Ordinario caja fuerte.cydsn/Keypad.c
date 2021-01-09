@@ -2,6 +2,8 @@
 #include "project.h"
 #include "Keypad.h"
 #include <stdio.h>
+#include "Lib_led.h"
+
 static bool validkey= false;
 
 uint8 value= 0x00;
@@ -10,8 +12,8 @@ char show[250];
 
 int key;
 
-void Keypad_stop(void){
-    
+
+void Keypad_stop(void){  
     
 }
 
@@ -49,20 +51,16 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(Filas_Read()){
                 case 0x0e:
-                    key=1;                  
-                    sprintf(show,"  Tecla apretada: %dV", key);
-                    UART_UartPutString(show);
-        
-                    UART_UartPutCRLF(0);
+                    key='*';                                      
                     break;
                 case 0x0d:
-                    key=4;                    
+                    key=7;                    
                     break;
                 case 0x0b: 
-                    key=7;                   
+                    key=4;                   
                     break; 
                 case 0x07:
-                    key='*'; 
+                    key=1; 
                     break;
                 default:
                     return;
@@ -76,19 +74,19 @@ CY_ISR(InterrupRowButtons){
         if(value != 0x0F){
             switch(value){
                 case 0x0e:
-                    key=2;
+                    key=0;
                     break;
                     
                 case 0x0d:
-                    key=5;
+                    key=8;
                     break; 
                 
                 case 0x0b:
-                    key=8;
+                    key=5;
                     break;
                 
                 case 0x07:
-                    key=0;
+                    key=2;
                     break;
 
                 default: 
@@ -103,19 +101,19 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(value){
                 case 0x0e:
-                    key=3;
+                    key='D';                    
                     break;
                     
                 case 0x0d:
-                    key=6;
+                    key='C';
                     break;
                 
                 case 0x0b:
-                    key=9;
+                    key='B';
                     break;
                 
                 case 0x07:
-                    key='#';
+                    key='A';                    
                     break;
                 
                 
@@ -130,17 +128,17 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(value){
                 case 0x0e:
-                    key='A';
+                    key='#';                    
                     break;
                 case 0x0d:
-                    key='B';
+                    key=9;
                     break;
                 
                 case 0x0b:
-                    key='C';
+                    key=6;
                     break;
                 case 0x07:
-                    key='D';
+                    key=3;
                     break;
                 default:
                     break;

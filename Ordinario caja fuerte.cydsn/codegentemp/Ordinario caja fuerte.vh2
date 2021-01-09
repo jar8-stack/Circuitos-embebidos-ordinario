@@ -2,7 +2,7 @@
 --	Conversion of Ordinario caja fuerte.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Fri Jan 08 18:48:09 2021
+--	Fri Jan 08 22:24:01 2021
 --
 
 USE cypress.cypress.all;

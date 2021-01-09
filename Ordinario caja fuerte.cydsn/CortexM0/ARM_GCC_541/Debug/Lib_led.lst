@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 1
 
 
    1              		.syntax unified
@@ -46,10 +46,11 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
   16:Lib_led.c     **** #include "Lib_led.h"
   17:Lib_led.c     **** 
   18:Lib_led.c     **** 
-  19:Lib_led.c     **** static uint8 EstadoLeds=0x00;
-  20:Lib_led.c     **** 
-  21:Lib_led.c     **** void PrenderVerde(void){
-  28              		.loc 1 21 0
+  19:Lib_led.c     **** 
+  20:Lib_led.c     **** static uint8 EstadoLeds=0x00;
+  21:Lib_led.c     **** 
+  22:Lib_led.c     **** void PrenderVerde(void){
+  28              		.loc 1 22 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -57,23 +58,23 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
   33              		.cfi_def_cfa_offset 8
   34              		.cfi_offset 4, -8
   35              		.cfi_offset 14, -4
-  22:Lib_led.c     ****     EstadoLeds |=LedVerde; 
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 2
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 2
 
 
-  36              		.loc 1 22 0
+  23:Lib_led.c     ****     EstadoLeds |=LedVerde; 
+  36              		.loc 1 23 0
   37 0002 044A     		ldr	r2, .L2
   38 0004 1078     		ldrb	r0, [r2]
   39 0006 0123     		movs	r3, #1
   40 0008 1843     		orrs	r0, r3
   41 000a C0B2     		uxtb	r0, r0
   42 000c 1070     		strb	r0, [r2]
-  23:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
-  43              		.loc 1 23 0
+  24:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
+  43              		.loc 1 24 0
   44 000e FFF7FEFF 		bl	Led_pins_Write
   45              	.LVL0:
-  24:Lib_led.c     **** }
-  46              		.loc 1 24 0
+  25:Lib_led.c     **** }
+  46              		.loc 1 25 0
   47              		@ sp needed
   48 0012 10BD     		pop	{r4, pc}
   49              	.L3:
@@ -91,8 +92,8 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
   61              		.type	ApagarVerde, %function
   62              	ApagarVerde:
   63              	.LFB35:
-  25:Lib_led.c     **** void ApagarVerde(void){
-  64              		.loc 1 25 0
+  26:Lib_led.c     **** void ApagarVerde(void){
+  64              		.loc 1 26 0
   65              		.cfi_startproc
   66              		@ args = 0, pretend = 0, frame = 0
   67              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -100,27 +101,27 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
   69              		.cfi_def_cfa_offset 8
   70              		.cfi_offset 4, -8
   71              		.cfi_offset 14, -4
-  26:Lib_led.c     ****     EstadoLeds &=~(LedVerde); 
-  72              		.loc 1 26 0
+  27:Lib_led.c     ****     EstadoLeds &=~(LedVerde); 
+  72              		.loc 1 27 0
   73 0002 044B     		ldr	r3, .L5
   74 0004 1878     		ldrb	r0, [r3]
   75 0006 0122     		movs	r2, #1
   76 0008 9043     		bics	r0, r2
   77 000a 1870     		strb	r0, [r3]
-  27:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
-  78              		.loc 1 27 0
+  28:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
+  78              		.loc 1 28 0
   79 000c FFF7FEFF 		bl	Led_pins_Write
   80              	.LVL1:
-  28:Lib_led.c     **** }
-  81              		.loc 1 28 0
+  29:Lib_led.c     **** }
+  81              		.loc 1 29 0
   82              		@ sp needed
   83 0010 10BD     		pop	{r4, pc}
   84              	.L6:
   85 0012 C046     		.align	2
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 3
+
+
   86              	.L5:
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 3
-
-
   87 0014 00000000 		.word	.LANCHOR0
   88              		.cfi_endproc
   89              	.LFE35:
@@ -133,8 +134,8 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
   96              		.type	PrenderAmarillo, %function
   97              	PrenderAmarillo:
   98              	.LFB36:
-  29:Lib_led.c     **** void PrenderAmarillo(void){
-  99              		.loc 1 29 0
+  30:Lib_led.c     **** void PrenderAmarillo(void){
+  99              		.loc 1 30 0
  100              		.cfi_startproc
  101              		@ args = 0, pretend = 0, frame = 0
  102              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -142,20 +143,20 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  104              		.cfi_def_cfa_offset 8
  105              		.cfi_offset 4, -8
  106              		.cfi_offset 14, -4
-  30:Lib_led.c     ****     EstadoLeds |=LedAmarillo; 
- 107              		.loc 1 30 0
+  31:Lib_led.c     ****     EstadoLeds |=LedAmarillo; 
+ 107              		.loc 1 31 0
  108 0002 044A     		ldr	r2, .L8
  109 0004 1078     		ldrb	r0, [r2]
  110 0006 0223     		movs	r3, #2
  111 0008 1843     		orrs	r0, r3
  112 000a C0B2     		uxtb	r0, r0
  113 000c 1070     		strb	r0, [r2]
-  31:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
- 114              		.loc 1 31 0
+  32:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
+ 114              		.loc 1 32 0
  115 000e FFF7FEFF 		bl	Led_pins_Write
  116              	.LVL2:
-  32:Lib_led.c     **** } 
- 117              		.loc 1 32 0
+  33:Lib_led.c     **** } 
+ 117              		.loc 1 33 0
  118              		@ sp needed
  119 0012 10BD     		pop	{r4, pc}
  120              	.L9:
@@ -173,31 +174,31 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  132              		.type	ApagarAmarillo, %function
  133              	ApagarAmarillo:
  134              	.LFB37:
-  33:Lib_led.c     **** void ApagarAmarillo(void){
- 135              		.loc 1 33 0
+  34:Lib_led.c     **** void ApagarAmarillo(void){
+ 135              		.loc 1 34 0
  136              		.cfi_startproc
  137              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 4
+
+
  138              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 4
-
-
  139 0000 10B5     		push	{r4, lr}
  140              		.cfi_def_cfa_offset 8
  141              		.cfi_offset 4, -8
  142              		.cfi_offset 14, -4
-  34:Lib_led.c     ****     EstadoLeds &=~(LedAmarillo); 
- 143              		.loc 1 34 0
+  35:Lib_led.c     ****     EstadoLeds &=~(LedAmarillo); 
+ 143              		.loc 1 35 0
  144 0002 044B     		ldr	r3, .L11
  145 0004 1878     		ldrb	r0, [r3]
  146 0006 0222     		movs	r2, #2
  147 0008 9043     		bics	r0, r2
  148 000a 1870     		strb	r0, [r3]
-  35:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
- 149              		.loc 1 35 0
+  36:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
+ 149              		.loc 1 36 0
  150 000c FFF7FEFF 		bl	Led_pins_Write
  151              	.LVL3:
-  36:Lib_led.c     **** }
- 152              		.loc 1 36 0
+  37:Lib_led.c     **** }
+ 152              		.loc 1 37 0
  153              		@ sp needed
  154 0010 10BD     		pop	{r4, pc}
  155              	.L12:
@@ -215,8 +216,8 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  167              		.type	PrenderRojo, %function
  168              	PrenderRojo:
  169              	.LFB38:
-  37:Lib_led.c     **** void PrenderRojo(void){
- 170              		.loc 1 37 0
+  38:Lib_led.c     **** void PrenderRojo(void){
+ 170              		.loc 1 38 0
  171              		.cfi_startproc
  172              		@ args = 0, pretend = 0, frame = 0
  173              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -224,23 +225,23 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  175              		.cfi_def_cfa_offset 8
  176              		.cfi_offset 4, -8
  177              		.cfi_offset 14, -4
-  38:Lib_led.c     ****     EstadoLeds |=LedRojo; 
- 178              		.loc 1 38 0
+  39:Lib_led.c     ****     EstadoLeds |=LedRojo; 
+ 178              		.loc 1 39 0
  179 0002 044A     		ldr	r2, .L14
  180 0004 1078     		ldrb	r0, [r2]
  181 0006 0423     		movs	r3, #4
  182 0008 1843     		orrs	r0, r3
  183 000a C0B2     		uxtb	r0, r0
  184 000c 1070     		strb	r0, [r2]
-  39:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
- 185              		.loc 1 39 0
+  40:Lib_led.c     ****     Led_pins_Write(EstadoLeds); 
+ 185              		.loc 1 40 0
  186 000e FFF7FEFF 		bl	Led_pins_Write
  187              	.LVL4:
-  40:Lib_led.c     **** }
- 188              		.loc 1 40 0
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 5
+  41:Lib_led.c     **** }
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 5
 
 
+ 188              		.loc 1 41 0
  189              		@ sp needed
  190 0012 10BD     		pop	{r4, pc}
  191              	.L15:
@@ -258,8 +259,8 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  203              		.type	ApagarRojo, %function
  204              	ApagarRojo:
  205              	.LFB39:
-  41:Lib_led.c     **** void ApagarRojo(void){
- 206              		.loc 1 41 0
+  42:Lib_led.c     **** void ApagarRojo(void){
+ 206              		.loc 1 42 0
  207              		.cfi_startproc
  208              		@ args = 0, pretend = 0, frame = 0
  209              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -267,19 +268,19 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  211              		.cfi_def_cfa_offset 8
  212              		.cfi_offset 4, -8
  213              		.cfi_offset 14, -4
-  42:Lib_led.c     ****     EstadoLeds &=~(LedRojo); 
- 214              		.loc 1 42 0
+  43:Lib_led.c     ****     EstadoLeds &=~(LedRojo); 
+ 214              		.loc 1 43 0
  215 0002 044B     		ldr	r3, .L17
  216 0004 1878     		ldrb	r0, [r3]
  217 0006 0422     		movs	r2, #4
  218 0008 9043     		bics	r0, r2
  219 000a 1870     		strb	r0, [r3]
-  43:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
- 220              		.loc 1 43 0
+  44:Lib_led.c     ****     Led_pins_Write(EstadoLeds);
+ 220              		.loc 1 44 0
  221 000c FFF7FEFF 		bl	Led_pins_Write
  222              	.LVL5:
-  44:Lib_led.c     **** }...
- 223              		.loc 1 44 0
+  45:Lib_led.c     **** }...
+ 223              		.loc 1 45 0
  224              		@ sp needed
  225 0010 10BD     		pop	{r4, pc}
  226              	.L18:
@@ -297,10 +298,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  238 0000 00       		.space	1
  239              		.text
  240              	.Letext0:
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 6
+
+
  241              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 6
-
-
  242              		.file 3 "Generated_Source\\PSoC4/Led_pins.h"
  243              		.section	.debug_info,"",%progbits
  244              	.Ldebug_info0:
@@ -357,10 +358,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  295 0066 07       		.byte	0x7
  296 0067 1A000000 		.4byte	.LASF8
  297 006b 04       		.uleb128 0x4
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 7
+
+
  298 006c 50000000 		.4byte	.LASF23
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 7
-
-
  299 0070 02       		.byte	0x2
  300 0071 F701     		.2byte	0x1f7
  301 0073 2C000000 		.4byte	0x2c
@@ -387,7 +388,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  322 009a 05       		.uleb128 0x5
  323 009b 13020000 		.4byte	.LASF14
  324 009f 01       		.byte	0x1
- 325 00a0 15       		.byte	0x15
+ 325 00a0 16       		.byte	0x16
  326 00a1 00000000 		.4byte	.LFB34
  327 00a5 18000000 		.4byte	.LFE34-.LFB34
  328 00a9 01       		.uleb128 0x1
@@ -400,7 +401,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  335 00b9 05       		.uleb128 0x5
  336 00ba 0E000000 		.4byte	.LASF15
  337 00be 01       		.byte	0x1
- 338 00bf 19       		.byte	0x19
+ 338 00bf 1A       		.byte	0x1a
  339 00c0 00000000 		.4byte	.LFB35
  340 00c4 18000000 		.4byte	.LFE35-.LFB35
  341 00c8 01       		.uleb128 0x1
@@ -413,14 +414,14 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  348 00d8 05       		.uleb128 0x5
  349 00d9 5A010000 		.4byte	.LASF16
  350 00dd 01       		.byte	0x1
- 351 00de 1D       		.byte	0x1d
+ 351 00de 1E       		.byte	0x1e
  352 00df 00000000 		.4byte	.LFB36
  353 00e3 18000000 		.4byte	.LFE36-.LFB36
  354 00e7 01       		.uleb128 0x1
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 8
+
+
  355 00e8 9C       		.byte	0x9c
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 8
-
-
  356 00e9 F7000000 		.4byte	0xf7
  357 00ed 06       		.uleb128 0x6
  358 00ee 12000000 		.4byte	.LVL2
@@ -429,7 +430,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  361 00f7 05       		.uleb128 0x5
  362 00f8 41000000 		.4byte	.LASF17
  363 00fc 01       		.byte	0x1
- 364 00fd 21       		.byte	0x21
+ 364 00fd 22       		.byte	0x22
  365 00fe 00000000 		.4byte	.LFB37
  366 0102 18000000 		.4byte	.LFE37-.LFB37
  367 0106 01       		.uleb128 0x1
@@ -442,7 +443,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  374 0116 05       		.uleb128 0x5
  375 0117 68000000 		.4byte	.LASF18
  376 011b 01       		.byte	0x1
- 377 011c 25       		.byte	0x25
+ 377 011c 26       		.byte	0x26
  378 011d 00000000 		.4byte	.LFB38
  379 0121 18000000 		.4byte	.LFE38-.LFB38
  380 0125 01       		.uleb128 0x1
@@ -455,7 +456,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  387 0135 05       		.uleb128 0x5
  388 0136 27000000 		.4byte	.LASF19
  389 013a 01       		.byte	0x1
- 390 013b 29       		.byte	0x29
+ 390 013b 2A       		.byte	0x2a
  391 013c 00000000 		.4byte	.LFB39
  392 0140 18000000 		.4byte	.LFE39-.LFB39
  393 0144 01       		.uleb128 0x1
@@ -468,7 +469,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  400 0154 07       		.uleb128 0x7
  401 0155 C1000000 		.4byte	.LASF24
  402 0159 01       		.byte	0x1
- 403 015a 13       		.byte	0x13
+ 403 015a 14       		.byte	0x14
  404 015b 6B000000 		.4byte	0x6b
  405 015f 05       		.uleb128 0x5
  406 0160 03       		.byte	0x3
@@ -477,10 +478,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  409 0166 32000000 		.4byte	.LASF25
  410 016a 32000000 		.4byte	.LASF25
  411 016e 03       		.byte	0x3
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 9
+
+
  412 016f 33       		.byte	0x33
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 9
-
-
  413 0170 00       		.byte	0
  414              		.section	.debug_abbrev,"",%progbits
  415              	.Ldebug_abbrev0:
@@ -537,10 +538,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  466 0032 49       		.uleb128 0x49
  467 0033 13       		.uleb128 0x13
  468 0034 00       		.byte	0
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 10
+
+
  469 0035 00       		.byte	0
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 10
-
-
  470 0036 05       		.uleb128 0x5
  471 0037 2E       		.uleb128 0x2e
  472 0038 01       		.byte	0x1
@@ -597,10 +598,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  523 006e 19       		.uleb128 0x19
  524 006f 3C       		.uleb128 0x3c
  525 0070 19       		.uleb128 0x19
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 11
+
+
  526 0071 6E       		.uleb128 0x6e
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 11
-
-
  527 0072 0E       		.uleb128 0xe
  528 0073 03       		.uleb128 0x3
  529 0074 0E       		.uleb128 0xe
@@ -657,10 +658,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  577      FB0E0D00 
  577      01010101 
  578              	.LASF6:
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 12
+
+
  579 0000 6C6F6E67 		.ascii	"long long int\000"
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 12
-
-
  579      206C6F6E 
  579      6720696E 
  579      7400
@@ -717,10 +718,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  601      676E6564 
  601      20636861 
  601      7200
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 13
+
+
  602              	.LASF11:
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 13
-
-
  603 00ac 63686172 		.ascii	"char\000"
  603      00
  604              	.LASF4:
@@ -777,10 +778,10 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 1
  623 01e0 6A612066 		.ascii	"ja fuerte.cydsn\000"
  623      75657274 
  623      652E6379 
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccKiofxr.s 			page 14
+
+
  623      64736E00 
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc3rAp9o.s 			page 14
-
-
  624              	.LASF21:
  625 01f0 4C69625F 		.ascii	"Lib_led.c\000"
  625      6C65642E 

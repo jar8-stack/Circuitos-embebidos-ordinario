@@ -23,8 +23,8 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     for(;;)
-    {
-        Keypad_start();   
+    {        
+        Keypad_start();         
         /* Camarada que diantre*/
         /* Place your application code here. */
     }
