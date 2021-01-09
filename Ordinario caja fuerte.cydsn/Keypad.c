@@ -1,9 +1,12 @@
 #include "stdbool.h"
 #include "project.h"
 #include "Keypad.h"
+#include <stdio.h>
 static bool validkey= false;
 
 uint8 value= 0x00;
+
+char show[250];
 
 int key;
 
@@ -14,6 +17,7 @@ void Keypad_stop(void){
 
 
 void Keypad_start(void){
+    UART_Start();
     IsrRowPins_StartEx(InterrupRowButtons);    
     Col_Write(0x00);
     IsrRowPins_Enable();
@@ -22,6 +26,7 @@ void Keypad_start(void){
 
 CY_ISR(InterrupRowButtons){
     Filas_ClearInterrupt();
+    
     
     uint8 i, j;
     
@@ -44,7 +49,11 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(Filas_Read()){
                 case 0x0e:
-                    key=1;                     
+                    key=1;                  
+                    sprintf(show,"  Tecla apretada: %dV", key);
+                    UART_UartPutString(show);
+        
+                    UART_UartPutCRLF(0);
                     break;
                 case 0x0d:
                     key=4;                    

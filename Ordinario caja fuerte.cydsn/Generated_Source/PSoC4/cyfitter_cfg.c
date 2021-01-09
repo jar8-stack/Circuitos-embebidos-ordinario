@@ -179,12 +179,17 @@ static void ClockSetup(void)
 
 
 	/* Setup phase aligned clocks */
+	CY_SET_REG32((void *)CYREG_PERI_DIV_16_CTL0, 0x0001A000u);
+	CY_SET_REG32((void *)CYREG_PERI_DIV_CMD, 0x8000FF40u);
 
 	/* CYDEV_CLK_IMO_CONFIG Starting address: CYDEV_CLK_IMO_CONFIG */
 	CY_SET_REG32((void *)(CYREG_CLK_IMO_CONFIG), 0x80000000u);
 
 	/* CYDEV_CLK_SELECT Starting address: CYDEV_CLK_SELECT */
 	CY_SET_REG32((void *)(CYREG_CLK_SELECT), 0x00040000u);
+
+	/* CYDEV_PERI_PCLK_CTL2 Starting address: CYDEV_PERI_PCLK_CTL2 */
+	CY_SET_REG32((void *)(CYREG_PERI_PCLK_CTL2), 0x00000040u);
 
 	(void)CyIntSetVector(7u, &CySysWdtIsr);
 	CyIntEnable(7u);
@@ -267,6 +272,7 @@ void cyfitter_cfg(void)
 
 		/* HSIOM Starting address: CYDEV_HSIOM_BASE */
 		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL3), 0x0000EE00u);
+		CY_SET_REG32((void *)(CYREG_HSIOM_PORT_SEL4), 0x00000090u);
 
 		/* UDB_PA_1 Starting address: CYDEV_UDB_PA1_BASE */
 		CY_SET_REG32((void *)(CYDEV_UDB_PA1_BASE), 0x00990000u);
@@ -294,7 +300,9 @@ void cyfitter_cfg(void)
 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC), 0x00000D80u);
 
 	/* IOPINS0_4 Starting address: CYDEV_GPIO_PRT4_BASE */
-	CY_SET_REG32((void *)(CYREG_GPIO_PRT4_PC), 0x00036C00u);
+	CY_SET_REG32((void *)(CYDEV_GPIO_PRT4_BASE), 0x00000002u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT4_PC), 0x00036C30u);
+	CY_SET_REG32((void *)(CYREG_GPIO_PRT4_PC2), 0x00000002u);
 
 
 	/* Setup clocks based on selections from Clock DWR */

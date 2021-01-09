@@ -12,6 +12,7 @@
 #include "project.h"
 #include "Lib_led.h"
 #include "Lib_led.h"
+#include "Keypad.h"
 
 int t=500; 
 
@@ -23,10 +24,7 @@ int main(void)
 
     for(;;)
     {
-        PrenderVerde();
-        CyDelay(t);
-        ApagarVerde();
-        CyDelay(t);
+        Keypad_start();   
         /* Camarada que diantre*/
         /* Place your application code here. */
     }
