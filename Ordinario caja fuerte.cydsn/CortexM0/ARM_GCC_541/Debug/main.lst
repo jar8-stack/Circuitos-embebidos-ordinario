@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 1
 
 
    1              		.syntax unified
@@ -43,39 +43,45 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
   13:main.c        **** #include "Lib_led.h"
   14:main.c        **** #include "Lib_led.h"
   15:main.c        **** #include "Keypad.h"
-  16:main.c        **** 
-  17:main.c        **** int t=500; 
+  16:main.c        **** #include <string.h>
+  17:main.c        **** 
   18:main.c        **** 
-  19:main.c        **** int main(void)
-  20:main.c        **** {
-  28              		.loc 1 20 0
+  19:main.c        **** int t=500; 
+  20:main.c        **** 
+  21:main.c        **** 
+  22:main.c        **** 
+  23:main.c        **** 
+  24:main.c        **** 
+  25:main.c        **** int main(void)
+  26:main.c        **** {
+  28              		.loc 1 26 0
   29              		.cfi_startproc
   30              		@ Volatile: function does not return.
   31              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 2
+
+
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   33 0000 10B5     		push	{r4, lr}
   34              		.cfi_def_cfa_offset 8
   35              		.cfi_offset 4, -8
   36              		.cfi_offset 14, -4
-  21:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 2
-
-
-  37              		.loc 1 21 0
+  27:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 27 0
   38              		.syntax divided
-  39              	@ 21 "main.c" 1
+  39              	@ 27 "main.c" 1
   40 0002 62B6     		CPSIE   i
   41              	@ 0 "" 2
   42              		.thumb
   43              		.syntax unified
   44              	.L2:
-  22:main.c        **** 
-  23:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-  24:main.c        **** 
-  25:main.c        ****     for(;;)
-  26:main.c        ****     {        
-  27:main.c        ****         Keypad_start();         
-  45              		.loc 1 27 0 discriminator 1
+  28:main.c        **** 
+  29:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  30:main.c        **** 
+  31:main.c        ****     for(;;)
+  32:main.c        ****     {           
+  33:main.c        ****         Keypad_start();        
+  45              		.loc 1 33 0 discriminator 1
   46 0004 FFF7FEFF 		bl	Keypad_start
   47              	.LVL0:
   48 0008 FCE7     		b	.L2
@@ -112,15 +118,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
   79 0028 1A010000 		.4byte	.LASF0
   80 002c 02       		.uleb128 0x2
   81 002d 01       		.byte	0x1
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 3
+
+
   82 002e 08       		.byte	0x8
   83 002f 49000000 		.4byte	.LASF1
   84 0033 02       		.uleb128 0x2
   85 0034 02       		.byte	0x2
   86 0035 05       		.byte	0x5
   87 0036 A0010000 		.4byte	.LASF2
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 3
-
-
   88 003a 02       		.uleb128 0x2
   89 003b 02       		.byte	0x2
   90 003c 07       		.byte	0x7
@@ -172,15 +178,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  136 008e 04       		.uleb128 0x4
  137 008f 15000000 		.4byte	.LASF17
  138 0093 01       		.byte	0x1
- 139 0094 13       		.byte	0x13
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 4
+
+
+ 139 0094 19       		.byte	0x19
  140 0095 5D000000 		.4byte	0x5d
  141 0099 00000000 		.4byte	.LFB34
  142 009d 0A000000 		.4byte	.LFE34-.LFB34
  143 00a1 01       		.uleb128 0x1
  144 00a2 9C       		.byte	0x9c
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 4
-
-
  145 00a3 B1000000 		.4byte	0xb1
  146 00a7 05       		.uleb128 0x5
  147 00a8 08000000 		.4byte	.LVL0
@@ -189,7 +195,7 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  150 00b1 06       		.uleb128 0x6
  151 00b2 7400     		.ascii	"t\000"
  152 00b4 01       		.byte	0x1
- 153 00b5 11       		.byte	0x11
+ 153 00b5 13       		.byte	0x13
  154 00b6 5D000000 		.4byte	0x5d
  155 00ba 05       		.uleb128 0x5
  156 00bb 03       		.byte	0x3
@@ -232,15 +238,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  193 001b 0E       		.uleb128 0xe
  194 001c 00       		.byte	0
  195 001d 00       		.byte	0
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 5
+
+
  196 001e 03       		.uleb128 0x3
  197 001f 24       		.uleb128 0x24
  198 0020 00       		.byte	0
  199 0021 0B       		.uleb128 0xb
  200 0022 0B       		.uleb128 0xb
  201 0023 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 5
-
-
  202 0024 0B       		.uleb128 0xb
  203 0025 03       		.uleb128 0x3
  204 0026 08       		.uleb128 0x8
@@ -292,15 +298,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  250 0058 3A       		.uleb128 0x3a
  251 0059 0B       		.uleb128 0xb
  252 005a 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 6
+
+
  253 005b 0B       		.uleb128 0xb
  254 005c 49       		.uleb128 0x49
  255 005d 13       		.uleb128 0x13
  256 005e 3F       		.uleb128 0x3f
  257 005f 19       		.uleb128 0x19
  258 0060 02       		.uleb128 0x2
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 6
-
-
  259 0061 18       		.uleb128 0x18
  260 0062 00       		.byte	0
  261 0063 00       		.byte	0
@@ -352,15 +358,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  302      206C6F6E 
  302      6720696E 
  302      7400
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 7
+
+
  303              	.LASF15:
  304 000e 6D61696E 		.ascii	"main.c\000"
  304      2E6300
  305              	.LASF17:
  306 0015 6D61696E 		.ascii	"main\000"
  306      00
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 7
-
-
  307              	.LASF5:
  308 001a 6C6F6E67 		.ascii	"long unsigned int\000"
  308      20756E73 
@@ -412,15 +418,15 @@ ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 1
  326      74696F6E 
  326      2D736563 
  326      74696F6E 
+ARM GAS  C:\Users\biosh\AppData\Local\Temp\ccwbr76r.s 			page 8
+
+
  327              	.LASF3:
  328 0107 73686F72 		.ascii	"short unsigned int\000"
  328      7420756E 
  328      7369676E 
  328      65642069 
  328      6E7400
-ARM GAS  C:\Users\biosh\AppData\Local\Temp\cc9K41fb.s 			page 8
-
-
  329              	.LASF0:
  330 011a 7369676E 		.ascii	"signed char\000"
  330      65642063 

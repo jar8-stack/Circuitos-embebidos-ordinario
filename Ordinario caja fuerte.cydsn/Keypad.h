@@ -9,5 +9,7 @@ extern void Keypad_start(void);
 extern void Keypad_stop(void);
 
 extern uint8 ReadKey(void);
+
+extern void CheckPassword(char input[4]);
     
 #endif

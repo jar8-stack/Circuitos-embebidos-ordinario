@@ -13,8 +13,14 @@
 #include "Lib_led.h"
 #include "Lib_led.h"
 #include "Keypad.h"
+#include <string.h>
+
 
 int t=500; 
+
+
+
+
 
 int main(void)
 {
@@ -23,8 +29,8 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
 
     for(;;)
-    {        
-        Keypad_start();         
+    {           
+        Keypad_start();        
         /* Camarada que diantre*/
         /* Place your application code here. */
     }

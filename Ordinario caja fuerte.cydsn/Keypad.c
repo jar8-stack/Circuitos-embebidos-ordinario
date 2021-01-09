@@ -3,6 +3,7 @@
 #include "Keypad.h"
 #include <stdio.h>
 #include "Lib_led.h"
+#include <string.h>
 
 static bool validkey= false;
 
@@ -11,7 +12,28 @@ uint8 value= 0x00;
 char show[250];
 
 int key;
+char contrasena[4];
+char inputPassword[4];
 
+
+const char *keyast = "*";
+const char *key4 = "4";
+const char *key7 = "7";
+const char *key1 = "1";
+
+
+void CheckPassword(char input[4]){
+    strcat(contrasena, "1");
+    strcat(contrasena, "4");
+    strcat(contrasena, "7");
+    strcat(contrasena, "*");
+    
+    if(contrasena==input){
+        PrenderVerde();
+        CyDelay(5000);
+    }
+    
+}
 
 void Keypad_stop(void){  
     
@@ -25,6 +47,8 @@ void Keypad_start(void){
     IsrRowPins_Enable();
     
 }
+
+
 
 CY_ISR(InterrupRowButtons){
     Filas_ClearInterrupt();
@@ -52,18 +76,22 @@ CY_ISR(InterrupRowButtons){
             switch(Filas_Read()){
                 case 0x0e:
                     key='*';
+                    strcat(inputPassword,keyast);                    
                     CyDelay(500);
                     break;
                 case 0x0d:
                     key=7;
+                    strcat(inputPassword,key7);
                     CyDelay(500);
                     break;
                 case 0x0b: 
                     key=4;
+                    strcat(inputPassword,key4);
                     CyDelay(500);
                     break; 
                 case 0x07:
                     key=1;
+                    strcat(inputPassword,key1);
                     CyDelay(500);
                     break;
                 default:
@@ -125,7 +153,8 @@ CY_ISR(InterrupRowButtons){
                 
                 case 0x07:
                     key='A';
-                    CyDelay(500);
+                    CheckPassword(inputPassword);
+                    CyDelay(500);                
                     break;
                 
                 
