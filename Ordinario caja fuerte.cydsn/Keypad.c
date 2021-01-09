@@ -51,16 +51,20 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(Filas_Read()){
                 case 0x0e:
-                    key='*';                                      
+                    key='*';
+                    CyDelay(500);
                     break;
                 case 0x0d:
-                    key=7;                    
+                    key=7;
+                    CyDelay(500);
                     break;
                 case 0x0b: 
-                    key=4;                   
+                    key=4;
+                    CyDelay(500);
                     break; 
                 case 0x07:
-                    key=1; 
+                    key=1;
+                    CyDelay(500);
                     break;
                 default:
                     return;
@@ -75,18 +79,22 @@ CY_ISR(InterrupRowButtons){
             switch(value){
                 case 0x0e:
                     key=0;
+                    CyDelay(500);
                     break;
                     
                 case 0x0d:
                     key=8;
+                    CyDelay(500);
                     break; 
                 
                 case 0x0b:
                     key=5;
+                    CyDelay(500);
                     break;
                 
                 case 0x07:
                     key=2;
+                    CyDelay(500);
                     break;
 
                 default: 
@@ -101,19 +109,23 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(value){
                 case 0x0e:
-                    key='D';                    
+                    key='D';
+                    CyDelay(500);
                     break;
                     
                 case 0x0d:
                     key='C';
+                    CyDelay(500);
                     break;
                 
                 case 0x0b:
                     key='B';
+                    CyDelay(500);
                     break;
                 
                 case 0x07:
-                    key='A';                    
+                    key='A';
+                    CyDelay(500);
                     break;
                 
                 
@@ -128,17 +140,21 @@ CY_ISR(InterrupRowButtons){
         if(value !=0x0F){
             switch(value){
                 case 0x0e:
-                    key='#';                    
+                    key='#';
+                    CyDelay(500);
                     break;
                 case 0x0d:
                     key=9;
+                    CyDelay(500);
                     break;
                 
                 case 0x0b:
                     key=6;
+                    CyDelay(500);
                     break;
                 case 0x07:
                     key=3;
+                    CyDelay(500);
                     break;
                 default:
                     break;
